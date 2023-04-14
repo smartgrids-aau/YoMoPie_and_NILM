@@ -1,3 +1,11 @@
+# Code for YomoPie instrumentation
+# YoMoPie is a Smart Metering Shield for the Raspberry Pie
+# For more details see: 
+# https://mobile.aau.at/publications/klemenjak-2018-yomopie.pdf
+#
+# Code by Stefan Jost
+# License: GPL v3
+
 import time
 import math
 import spidev
