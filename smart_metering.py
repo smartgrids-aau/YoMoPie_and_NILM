@@ -53,7 +53,7 @@ def metering_with_ld(name):
         if step >= 10 and len(samples)>50:
             prediction = model.predict(np.array([diff(samples[len(samples)-50:len(samples)])]))
             print("----------------%f|%f----------------" % (np.argmax(prediction), np.amax(prediction)))
-            if np.amax(prediction)>0.8: # confidence should be in the range of 70% to 90% to get the best accuracy
+            if np.amax(prediction)>0.8: # confidence threshold should be in the range of 0.7 to 0.9 to get acceptable accuracy
                 cp.append(np.argmax(prediction))
                 if cp[len(cp)-1] == np.argmax(prediction) and cp[len(cp)-2] == np.argmax(prediction):
                     change_state(np.argmax(prediction))
