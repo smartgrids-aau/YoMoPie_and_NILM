@@ -1,3 +1,8 @@
+# Smart meter data acquisition and disaggregation module
+#
+# Code by Stefan Jost
+# License: GPL v3
+
 import YoMoPie as yomopie
 import tensorflow as tf
 import matplotlib.pyplot as plt
